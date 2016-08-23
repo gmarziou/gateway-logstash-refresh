@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<configuration scan="true">
+<configuration scan="true" scanPeriod="5 seconds" debug="true">
     <include resource="org/springframework/boot/logging/logback/base.xml"/>
 
 <!-- The FILE and ASYNC appenders are here as examples for a production configuration -->
@@ -22,7 +22,7 @@
     </appender>
 -->
 
-    <logger name="com.mycompany.myapp" level="#logback.loglevel#"/>
+    <logger name="com.mycompany.myapp" level="DEBUG"/>
 
     <logger name="javax.activation" level="WARN"/>
     <logger name="javax.mail" level="WARN"/>
